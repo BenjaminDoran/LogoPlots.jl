@@ -1,7 +1,10 @@
 name = "LogoPlots"
 uuid = "463a02c6-07a9-4108-b146-0900016c928a"
 authors = ["Benjamin Doran"]
-version = "1.0.0-DEV"
+version = "0.1.0-DEV"
+
+[deps]
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
 
 [compat]
 julia = "1"
