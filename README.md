@@ -38,17 +38,17 @@ plot(title="random motif", ylabel="probability",
 logoplot!(m, rownames; 
     do_norm=true, 
     ignore_case=false, 
-    colors=[1:5...]'
+    color=[1:5...]'
 )
 ```
 
-<img width="663" alt="image" src="https://github.com/BenjaminDoran/LogoPlots.jl/assets/20494558/a9c1f7d9-a520-47eb-9ea8-bcf7065ab8b8">
+<img width="660" alt="image" src="https://github.com/BenjaminDoran/LogoPlots.jl/assets/20494558/06299396-a7fb-4bed-b0a6-bc0d658fc1fe">
 
 Args: 
 * do_norm: whether to normalize each column by its sum i.e. `col/sum(col)`
 * ignore_case: capitalize all `rownames`
 
-colors can be adjusted by passing a row vector of hexcode colors `["#ffffff", ...]` or integers (which uses the default Plots palette). Without passing a color keyword it will use the amino-acid color palette from [`gglogo`](https://github.com/heike/gglogo) and gray if the character is not an amino-acid code. 
+colors can be adjusted by passing a row vector of hexcode colors `permutedims(["#ffffff", ...])` or integers (which uses the default Plots palette). Without passing a color keyword it will use the amino-acid color palette from [`gglogo`](https://github.com/heike/gglogo) and gray if the character is not an amino-acid code. 
 
 If the characters in `rownames` are not in a-zA-Z0-9\* it will default to plotting a rectangle in place of that character.
 
