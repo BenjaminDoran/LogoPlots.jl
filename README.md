@@ -42,6 +42,8 @@ logoplot!(m, rownames;
 )
 ```
 
+<img width="663" alt="image" src="https://github.com/BenjaminDoran/LogoPlots.jl/assets/20494558/a9c1f7d9-a520-47eb-9ea8-bcf7065ab8b8">
+
 Args: 
 * do_norm: whether to normalize each column by its sum i.e. `col/sum(col)`
 * ignore_case: capitalize all `rownames`
